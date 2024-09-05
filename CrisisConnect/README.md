@@ -9,7 +9,12 @@ Briefly describe what your project does and its key features.
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/your-repo.git
+2. **Change Directory**:
+   ```bash
    cd your-repo
-2. **Install Node Modules**:
-   ```cmd
+3. **Install Node Modules**:
+   ```bash
    npm install
+4. **Initialise The Project**:
+   ```bash
+   npm init
