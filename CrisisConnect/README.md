@@ -18,3 +18,9 @@ Briefly describe what your project does and its key features.
 4. **Initialise The Project**:
    ```bash
    npm init
+5. **Start the express server**:
+   ```bash
+   ./backend/server.js
+6. **Start the react server**:
+   ```bash
+   npm run dev
