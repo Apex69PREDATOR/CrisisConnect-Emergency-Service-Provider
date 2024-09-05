@@ -11,3 +11,5 @@ Briefly describe what your project does and its key features.
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
 2. **Install Node Modules**:
+   ```cmd
+   npm install
