@@ -20,7 +20,7 @@ Briefly describe what your project does and its key features.
    npm init
 5. **Start the express server**:
    ```bash
-   ./backend/server.js
+   node ./backend/server.js
 6. **Start the react server**:
    ```bash
    npm run dev
