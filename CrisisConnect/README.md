@@ -18,6 +18,7 @@ Briefly describe what your project does and its key features.
    ```bash
    npm init
 5. **Modify the .env file**:
+```
     Go to the .env file and replace 'your email' with your email and 'your app password' with your app password(If you dont have an app password create it in your google account)
 6. **Start the express server**:
    ```bash
