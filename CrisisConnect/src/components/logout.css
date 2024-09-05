@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#logout-page{
+    height: 40vh;
+    width: 40vw;
+    background-color: rgb(202, 223, 247);
+    border: 0.4vh solid rgb(0, 0, 0);
+    border-radius: 50px;
+    position: absolute;
+    z-index: 3;
+    bottom: 30vh;
+    left: 30vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 10px  30px rgb(0, 0, 0);
+}
+:root{
+    z-index: 1;
+}
+.question{
+    color: rgb(18, 51, 215);
+    display: flex;
+    width: 80%;
+    height: 30%;
+    font-size: 2em;
+    align-items: flex-end;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.buttons{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30%;
+}
+.buttons button{
+    width: 40%;
+    height: 50%;
+    border-radius: 20PX;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 7px black;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+.yes{
+    background:linear-gradient(120deg,rgb(8, 188, 38),rgb(102, 246, 126));
+
+}
+.no{
+    background:linear-gradient(120deg,rgb(188, 8, 134),rgb(214, 109, 183));
+
+}
+.yes:hover{
+    transform: scale(1.1,1.1);
+}
+.no:hover{
+    transform: scale(1.1,1.1);
+}
+.sheet{
+    display: none;
+    background-color:white;
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}

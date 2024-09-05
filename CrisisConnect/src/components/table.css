@@ -1,0 +1,48 @@
+/* table.css */
+
+/* Styling for the table */
+.tablebody{
+    width: 100vw;
+}
+.tabserve {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+  }
+  .tabserve td,th{
+    border: 1px solid black;
+  }
+  
+  /* Styling for the table headers */
+  .tablecontent {
+    background-color: #4a5568;
+    color: white;
+  }
+  
+  /* Styling for table cells */
+  .user {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cbd5e0;
+  }
+  
+  /* Styling for odd rows */
+  .tabserve tbody tr:nth-child(odd) {
+    background-color: #edf2f7;
+  }
+  
+  /* Styling for even rows */
+  .tabserve tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  /* Styling for table on hover */
+  .tabserve tbody tr:hover {
+    background-color: #e2e8f0;
+    cursor: pointer;
+  }
+  .tabserve tbody tr td{
+    font-size: 1em;
+
+  }
+  

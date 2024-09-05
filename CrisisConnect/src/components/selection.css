@@ -1,0 +1,61 @@
+.select-container{
+    height: 50vh;
+    width: 25vw;
+    position: absolute;
+    right: 2%;
+    bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 5%;
+    align-items: center;
+    background: content-box radial-gradient(rgb(37, 20, 220), rgb(17, 236, 214));
+}
+.select-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.close-btn{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background-color: red;
+    color: white;
+    font-size: 1.25em;
+    border: none;
+    font-weight: bolder;
+    border-radius: 20%;
+}
+.close-btn:hover{
+    color: red;
+    background-color: white;
+    border: 2px solid black;
+}
+.selectemail{
+    height: 10%;
+    width: 80%;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+    background: linear-gradient(120deg,rgb(31, 240, 24),rgb(148, 240, 162));
+}
+.selectemail option{
+    color: black;
+}
+.sel-con{
+    height: 14%;
+    width: 20%;
+    border-radius: 10%;
+    border: none;
+    color: black;
+    background: linear-gradient(120deg,rgb(0, 255, 162),rgb(188, 250, 219));
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.sel-con:hover{
+    transform: scale(1.1,1.1);
+}

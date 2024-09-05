@@ -1,0 +1,33 @@
+.donation {
+    height: 60vh;
+    width: 40vw;
+    border: 1px solid;
+    position: absolute;
+    top: 12vh;
+    left: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0;
+    background-color: antiquewhite;
+    border-radius: 50px;
+
+}
+
+.donationimg {
+    height: 300px;
+    width: 300px;
+}
+.donationclosebtn{
+    height: 45px;
+    width: 70px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.donationclosebtn:hover,.donbtn:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.2);
+}

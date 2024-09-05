@@ -1,0 +1,83 @@
+main{
+  height: 89.3vh;
+}
+.card{
+  height: 250px;
+  width: 270px;
+  border: 0.5px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  align-items: center;
+  border-radius: 10px;
+}
+.card>img {
+    border-radius: 10px;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card:hover{
+  transition:  all .4s ease-in-out;
+  transform: scale(1.20);
+}
+.logout{
+  text-transform: uppercase;
+    height: 46px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 800;
+    width:  178px;
+    border-radius: 17px;
+    cursor: pointer;
+    background-color: rgb(255, 27, 27);
+    border: none;
+    /* box-shadow: 5px 5px 10px rgb(0, 0, 0); */
+}
+.retdash{
+  text-transform: uppercase;
+    height: 46px;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 800;
+    width:  178px;
+    border-radius: 17px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    /* box-shadow: 5px 5px 5px rgb(252, 253, 253); */
+}
+.tablebody{
+  background-color:transparent;
+  overflow: auto;
+  padding-top: 30px;
+}
+.user h4{
+  border-radius: 60px;
+  color: grey;
+}
+.tablecontent tr{
+  border-radius: 2em;
+  background-color: #fff;
+  height: 2em;
+  position: sticky;
+}
+.tab{
+  min-width: 100%;
+  table-layout: auto;
+}
+.loginup {
+  text-transform: uppercase;
+  height: 50px;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 800;
+  width:  130px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: rgb(27, 118, 255);
+  border: none;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+
+}

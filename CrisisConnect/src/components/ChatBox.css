@@ -1,0 +1,79 @@
+.chatbox{
+    border-radius: 5px;
+}
+.messages{
+    height: 74%;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.reply{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+.sending{
+    border: 1px solid;
+    border-radius: 15px;
+    height: auto;
+    width: 65%;
+    background-color: rgb(28, 28, 197);
+    text-align: end;
+    color: aliceblue;
+    padding: 5px;
+    margin-top: 1%;
+    margin-left: 30%;
+}
+.send{
+    /* border: 1px solid ; */
+    height: 40px;
+    width: 90%;
+    margin: 0 5% 25px 5%;
+}
+.sendmsg{
+    height: 100%;
+    width: 78%;
+    border-radius: 10px;
+    border: 0.5px solid;
+}
+.sendmsg::placeholder{
+    padding-left: 10px;
+}
+.sndbtn{
+    width: 45px;
+    border-radius: 10px;
+}
+.chatbtn{
+    width: 30px;
+    height: 30px;
+    font-size: larger;
+    font-weight: 900;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.backbtn{
+    height: 5vh;
+    width: 4vw;
+    border-radius: 10%;
+    border: none;
+    color: white;
+    background: linear-gradient(120deg,black,rgb(112, 103, 103));
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+.backbtn:hover{
+    transform: scale(1.05);
+}
+.chat:hover,.chatbtn:hover,.sndbtn:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.2);
+}

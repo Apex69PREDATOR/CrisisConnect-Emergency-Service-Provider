@@ -1,0 +1,371 @@
+body{
+  background-color: rgba(0, 0, 0, 0.788);
+}
+.Searching{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+    position:absolute;
+    bottom: 30%;
+    left: 25%;
+    border: 2px solid #b22222;
+    width: 50vw;
+    height: 40vh;
+    z-index: 1;
+}
+.Searching *{
+  width: 60%;
+  height: 15%;
+  text-align: center;
+  padding: 0;
+}
+.Searching label{
+  height: 7%;
+  font-size: 1.2em;
+  font-family: cursive;
+}
+.Searching input[type=submit]{
+  width: 20%;
+  height: 10%;
+}
+.spinner-box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    left: 40vw;
+    top: 15vh;
+    z-index: 2;
+  }
+  
+  /* SPINNING CIRCLE */
+  
+  .leo-border-1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(63,249,220);
+    background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%);
+    animation: spin3D 1.8s linear 0s infinite;
+  }
+  
+  .leo-core-1 {
+    width: 100%;
+    height: 100%;
+    background-color: #37474faa;
+    border-radius: 50%;
+  }
+  
+  .leo-border-2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(251, 91, 83);
+    background: linear-gradient(0deg, rgba(251, 91, 83, 0.1) 33%, rgba(251, 91, 83, 1) 100%);
+    animation: spin3D 2.2s linear 0s infinite;
+  }
+  
+  .leo-core-2 {
+    width: 100%;
+    height: 100%;
+    background-color: #1d2630aa;
+    border-radius: 50%;
+  }
+  @keyframes spin3D {
+    from {
+      transform: rotate3d(.5,.5,.5, 360deg);
+    }
+    to{
+      transform: rotate3d(0deg);
+    }
+  }
+  .resultcontainer{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    height: 55vh;
+    width: 100vw;
+    overflow-x:scroll;
+    /* border-color: fuchsia; */
+    top: 37vh;
+  }
+  
+  .result{
+    position: relative;
+    height: 75%;
+    width: 30%;
+    border-radius: 10%;
+    text-align: center;
+    background:repeating-linear-gradient(130deg,black,rgb(156, 156, 156));
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* filter: drop-shadow(0 0 0.75rem ); */
+    font-size: 0.92em;
+  }
+  .result::after,.result::before{
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(from var(--angle), transparent 70%, red, yellow, green, cyan, blue, magenta, purple, orange);
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: -2%;
+    left: -1%;
+    border-radius: 10%;
+    padding: 3px;
+    animation: 2s rotatebor linear infinite;
+  }
+  .result::before{
+    filter: blur(0.7rem);
+  }
+  @property --angle{
+     syntax: "<angle>";
+     initial-value: 0deg;
+     inherits: false;
+  }
+  @keyframes rotatebor{
+    from {
+      --angle: 0deg;
+    }
+    to {
+      --angle: 360deg;
+    }
+  }
+  .list-res{
+    border:2px solid black;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .list-res *{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    text-align: center;
+    margin: 0;
+    transition: 0.2s ease-in-out;
+    color: white;
+  }
+  .list-res thead{
+    position:sticky;
+    top: 0;
+    background-color: #5e90f1;
+    z-index: 1;
+  }
+  .list-res tbody tr:hover{
+    transform: scale(1.02,1.01);
+    background:linear-gradient(120deg,rgba(3, 20, 121, 0.554),rgba(97, 97, 136, 0.546))
+  }
+  .list-res .link,.post{
+    width: 10%;
+  }
+  .list-res td *{
+    border: none;
+  }
+  .list-res td a{
+    color: #00e6f6;
+  }
+  .con-suggplace{
+    height: 30vh;
+    width: 70vw;
+    position: relative;
+    top: -46vh;
+    left: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .h-near{
+    position: absolute;
+    color:crimson;
+    top: 3%;
+    left: 44%;
+    font-size: 1.6em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+.m-link,
+.m-link::after {
+ padding: 16px 20px;
+ font-size: 1.03em;
+ background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 2px;
+ line-height: 0.5;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: absolute;
+ left: 26%;
+ bottom: 10%;
+ height: 25%;
+ width: 50%;
+}
+
+.m-link::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "MAP";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+.m-link:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+    .m-link a{
+      height: 100%;
+      width: 100%;
+      color: white;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .planet-container {
+      border-radius: 50%;
+      box-shadow: 5px -3px 10px 3px #5e90f1;
+      height: 500px;
+      overflow: hidden;
+      position: absolute;
+      width: 500px;
+      z-index: 2;
+      left: 30%;
+      bottom: 10%;
+  }
+  .night {
+      animation: rotate-night 80s linear infinite;
+      background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_nightmap.jpg);
+      background-size: 200%;
+      height: 500px;
+      position: absolute;
+      width: 500px;
+      z-index: 3;
+  }
+  .day {
+      animation: rotate-day 80s linear infinite;
+      background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg);
+      background-size: 200%;
+      border-left: solid 1px black;
+      border-radius: 50%;
+      box-shadow: 5px 0 20px 10px #040615 inset; 
+      height: 500px;
+      margin-left: 110px;
+      position: absolute;
+      width: 500px;
+      z-index: 4;
+  }
+  .clouds {
+      animation: rotate-day 50s linear infinite, spin-clouds 100s ease infinite;
+      background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_clouds.jpg);
+      background-size: 200%;
+      border-radius: 50%;    
+      box-shadow: 5px 0 20px 10px #040615 inset, -9px 0px 20px 10px #5e90f1 inset;
+      height: 500px;
+      margin-left: 100px;
+      opacity: 0.45;
+      position: absolute;
+      width: 500px;
+      z-index: 5;
+  }
+  .inner-shadow {
+      background: transparent;
+      border-radius: 50%;
+      box-shadow: -5px 0 10px 1px #152b57 inset, 5px 0 10px 1px #040615 inset;
+      height: 500px;
+      margin-left: 0;
+      position: absolute;
+      width: 500px;
+      z-index: 6;
+  }
+  
+  @keyframes rotate-day {
+      0% { background-position: 120% 0; }
+      100% { background-position: -80% 0; }
+  }
+  @keyframes rotate-night {
+      0% { background-position: calc(120% + 120px) 0; }
+      100% { background-position: calc(-80% + 120px) 0; }
+  }
+  @keyframes spin-clouds {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(20deg); }
+      100% { transform: rotate(0deg); }
+  }
