@@ -7,10 +7,10 @@ Briefly describe what your project does and its key features.
 ## Setup Instructions
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/Apex69PREDATOR/CrisisConnect-Emergency-Service-Provider.git
 2. **Change Directory**:
    ```bash
-   cd your-repo
+   cd CrisisConnect-Emergency-Service-Provider
 3. **Install Node Modules**:
    ```bash
    npm install
