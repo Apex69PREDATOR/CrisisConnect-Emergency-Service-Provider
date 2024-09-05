@@ -10,7 +10,7 @@ CrisisConnect is a comprehensive web application designed to streamline emergenc
    git clone https://github.com/Apex69PREDATOR/CrisisConnect-Emergency-Service-Provider.git
 2. **Change Directory**:
    ```bash
-   cd CrisisConnect-Emergency-Service-Provider
+   cd CrisisConnect
 3. **Install Node Modules**:
    ```bash
    npm install
