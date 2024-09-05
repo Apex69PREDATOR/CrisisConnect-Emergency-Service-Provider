@@ -4,6 +4,14 @@
 
 CrisisConnect is a comprehensive web application designed to streamline emergency service requests and coordination. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), CrisisConnect provides a user-friendly platform for requesting emergency assistance such as fire, police, hospital, and medical support.
 
+## System Requirements
+- Node.js
+- MongoDB
+- Express
+- React
+- npm (Node Package Manager)
+- A web browser (e.g., Google Chrome, Mozilla Firefox)
+
 ## Setup Instructions
 1. **Clone the repository**:
    ```bash
