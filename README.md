@@ -33,3 +33,15 @@ CrisisConnect is a comprehensive web application designed to streamline emergenc
 7. **Start the react server**:
    ```bash
    npm run dev
+8. **Create a collection  in CrisisConnect DB**:
+   After executing the command "node ./backend/server.js" a database named "CrisisConnect" will be created. Just go through the database in MongoDB Compass and create a collection named "admin".
+9. **Create a component in admin collection**:
+   Create a component inside admin collection under CrisisConnect DB. Just add  ---->
+   {
+  "_id": {
+    "$oid": "66e164d1a2f6f07f2010c0c0"
+  },
+  "email":"your email in .env file",
+  "password":"any password of your choice"
+}
+10. **you will use the above email and password in login through admin portal**
