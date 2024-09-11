@@ -26,20 +26,23 @@ CrisisConnect is a comprehensive web application designed to streamline emergenc
 4. **Install cors**:
    ```bash
    npm install cors
-5. **Initialise The Project**:
+5. **Install Mongoose**:
+   ```bash
+   npm install mongoose
+6. **Install MongooDB**:
+   ```bash
+   npm install mongodb
+7. **Initialise The Project**:
    ```bash
    npm init
-6. **Modify the .env file**:
+8. **Modify the .env file**:
     Go to the .env file and replace 'your email' with your email and 'your app password' with your app password(If you dont have an app password create it in your google account)
-7. **Start the express server**:
+9. **Start the express server**:
    ```bash
    node ./backend/server.js
-8. **Start the react server**:
-   ```bash
-   npm run dev
-9. **Create a collection  in CrisisConnect DB**:
+10. **Create a collection  in CrisisConnect DB**:
    After executing the command "node ./backend/server.js" a database named "CrisisConnect" will be created. Just go through the database in MongoDB Compass and create a collection named "admin".
-10. **Create a component in admin collection**:
+11. **Create a component in admin collection**:
    Create a component inside admin collection under CrisisConnect DB. Just add  ---->
    {
   "_id": {
@@ -48,4 +51,4 @@ CrisisConnect is a comprehensive web application designed to streamline emergenc
   "email":"your email in .env file",
   "password":"any password of your choice"
 }
-11. **you will use the above email and password in login through admin portal**
+12. **you will use the above email and password in login through admin portal**
